@@ -39,9 +39,15 @@ $(document).ready(function(){
     //   }
     // ]
   });
+    
+    $(".menu_left2>ul>li").mouseover(function(){
+    $(".menu_left2>ul>li>ul").css("display","block");
+});
+$(".menu_left2>ul>li").mouseleave(function(){
+    $(".menu_left2>ul>li>ul").css("display","none");
+});
+    
+    
 })
 
 
-$(".menu_left2>ul>li").mouseover(function(){
-    $("..menu_left2>ul>li>ul").addClass("active");
-});

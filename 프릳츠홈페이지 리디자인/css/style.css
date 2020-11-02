@@ -27,7 +27,7 @@ a{
 
 /* 스타일 */
 body{
-    background:
+    background: #f8f8ed;
 }
 
 .header{
@@ -47,7 +47,7 @@ body{
 
 .top-menu>.menu_left1{
     width: 15%;
-    padding:20px 40px;
+    padding:20px 50px;
     box-sizing: border-box;
 }
 .top-menu>.menu_left1>.fritz{
@@ -66,7 +66,7 @@ body{
 .top-menu>.menu_left2>ul>li{
     width:23%;
     text-align: center;
-    padding:30px 0;
+    margin:30px 0;
     position: relative;
 }
 .top-menu>.menu_left2>ul>li>a:hover{
@@ -83,7 +83,7 @@ body{
     height: 15px;
     background: white;
     position: absolute;
-    top:32px;
+    top:3px;
 }
 .menu_left2>ul>li>ul{
     width:100%;
@@ -91,13 +91,12 @@ body{
     margin-top: 20px;
     display: none;
 }
-.menu_left2>ul>li>ul:active{
-    display: block;
-}
+
 .menu_left2>ul>li>ul>li{
     width:100%;
     height: 100%;
     margin-top: 5px;
+
 }
 .menu_left2>ul>li>ul>li>a:hover{
     font-weight: bold;
@@ -127,7 +126,7 @@ body{
 .top-menu>.menu_right1>ul>li{
     width:23%;
     text-align: center;
-    padding:30px 0;
+    margin:30px 0;
     position: relative;
 }
 .top-menu>.menu_right1>ul>li>a:hover{
@@ -145,7 +144,7 @@ body{
     height: 15px;
     background: white;
     position: absolute;
-    top:42%;
+    top:3px;
 }
 
 .top-menu>.menu_right2{
@@ -178,15 +177,23 @@ body{
 }
 .slick_wrap div>img{
     width:100%;
-    padding-bottom: 50.3023%;
+    height: 50vw;
     background-position: center;
     background-size: cover;
 }
 
 
+/* 커피클럽 */
+
+.coffee-club{
+    text-align: center;
+}
 
 
-
+.coffee-shop>h2{
+    margin-top: 100px;
+    text-align: center;
+}
 
 
 

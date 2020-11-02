@@ -36,6 +36,7 @@ body{
 
 
 /* 메뉴 */
+
 .top-menu{
     width:100%;
     height: 70px;
@@ -43,6 +44,8 @@ body{
     position: absolute;
     color:white;
     margin-top: 20px;
+    position: fixed;
+    z-index: 5;
 }
 
 .top-menu>.menu_left1{
@@ -52,10 +55,10 @@ body{
 }
 .top-menu>.menu_left1>.fritz{
     font-weight: bold;
-    
+    font-size: 20px;
 }
 .top-menu>.menu_left1>.bread{
-    font-size: 13px;
+    font-size: 15px;
 }
 .top-menu>.menu_left2{
     width:31%;
@@ -183,32 +186,123 @@ body{
 }
 
 
+/*  contents */
+.contents{
+    width: 1280px;
+    margin: 0 auto;
+}
+
 /* 커피클럽 */
 
 .coffee-club{
+    margin-top: 50px;
     text-align: center;
 }
 
+.coffee-club>a{
+    color: red;
+}
+.coffee-club>a:hover{
+    font-weight: bold;
+}
 
+/* 커피 베스트 */
+.coffee-shop{
+    width: 100%;
+    height: 372.87px;
+}
 .coffee-shop>h2{
     margin-top: 100px;
     text-align: center;
 }
+.coffee-shop>a{
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 15px;
+    color: red;
+}
+.coffee-shop>.coffee-list{
+    width: 100%;
+}
 
 
+.coffee-shop>.coffee-list>.con1{
+    background: #ddd;
+}
+.coffee-shop>.coffee-list>.con1>a{
+    display: block;
 
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bold;
+}
 
+.coffee-shop>.coffee-list>div{
+    width: 32%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 2%;
+}
+.coffee-shop>.coffee-list>div:last-child{
+    margin-right: 0;
+}
 
+.coffee-shop>.coffee-list>div>img{
+    width:100%;
+    height: 80%;
+    
+}
 
+/*커피 클래스*/
 
+.coffee-class{
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+}
 
+.coffee-class>img{
+    width: 100%;
+    height: 700px;
+    background-size: contain;
+    background-position: center;
+}
 
+.coffee-class>.copping-text{
+    position: absolute;
+    color: white;
+    top: 65%;
+    left:50px;
+}
 
+.goods{
+    width: 100%;
+    height: 1000px;
+}
+.goods>h2{
+    text-align: center;
+    margin: 50px 0;
+}
+.goods>.goods-img{
+    width: 49%;
+}
+.goods>div>img{
+    width: 100%;
+    height: auto;
+}
 
+.goods>div:nth-of-type(odd){
+    margin-right: 2%;
+}
 
+.goods>div:nth-of-type(1){
+    margin-bottom: 2%;
+}
 
-
-
-
-
-
+.goods>div:nth-of-type(2){
+    margin-bottom: 2%;
+}

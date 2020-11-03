@@ -1,221 +1,265 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-ol,ul,li{list-style: none;}
+ol,
+ul,
+li {
+    list-style: none;
+}
 
-a{
+a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 }
 
 /* 라이브러리 */
-.row{
+.row {
     display: block;
     content: "";
     clear: both;
 }
 
-.cell{
+.cell {
     float: left;
 }
 
-.cell2{
+.cell2 {
     float: right;
 }
 
 /* 스타일 */
-body{
+body {
     background: #f8f8ed;
 }
 
-.header{
-    width:100%;
+.header {
+    width: 100%;
 }
 
 
 /* 메뉴 */
 
-.top-menu{
-    width:100%;
+.top-menu {
+    width: 100%;
     height: 70px;
-/*    background: rgba(0,0,0,50%);*/
+    /*    background: rgba(0,0,0,50%);*/
     position: absolute;
-    color:white;
+    color: white;
     margin-top: 20px;
     position: fixed;
     z-index: 5;
 }
 
-.top-menu>.menu_left1{
+.top-menu > .menu_left1 {
     width: 15%;
-    padding:20px 50px;
+    padding: 20px 50px;
     box-sizing: border-box;
 }
-.top-menu>.menu_left1>.fritz{
+
+.top-menu > .menu_left1 > .fritz {
     font-weight: bold;
     font-size: 20px;
 }
-.top-menu>.menu_left1>.bread{
+
+.top-menu > .menu_left1 > .bread {
     font-size: 15px;
 }
-.top-menu>.menu_left2{
-    width:31%;
+
+.top-menu > .menu_left2 {
+    width: 31%;
     height: 100%;
     background: ;
 }
 
-.top-menu>.menu_left2>ul>li{
-    width:23%;
+.top-menu > .menu_left2 > ul > li {
+    width: 23%;
     text-align: center;
-    margin:30px 0;
+    margin: 30px 0;
     position: relative;
 }
-.top-menu>.menu_left2>ul>li>a:hover{
+
+.top-menu > .menu_left2 > ul > li > a:hover {
     font-weight: bold;
 }
 
-.top-menu>.menu_left2>ul>.left::before{
+.top-menu > .menu_left2 > ul > .left::before {
     display: none;
 }
-.top-menu>.menu_left2>ul>li::before{
+
+.top-menu > .menu_left2 > ul > li::before {
     display: block;
     content: "";
-    width:1px;
+    width: 1px;
     height: 15px;
     background: white;
     position: absolute;
-    top:3px;
+    top: 3px;
 }
-.menu_left2>ul>li>ul{
-    width:100%;
+
+.menu_left2 > ul > li > ul {
+    width: 100%;
     height: 100%;
     margin-top: 20px;
     display: none;
 }
 
-.menu_left2>ul>li>ul>li{
-    width:100%;
+.menu_left2 > ul > li > ul > li {
+    width: 100%;
     height: 100%;
     margin-top: 5px;
 
 }
-.menu_left2>ul>li>ul>li>a:hover{
+
+.menu_left2 > ul > li > ul > li > a:hover {
     font-weight: bold;
 }
 
-.top-menu>.menu_center{
-    width:8%;
+.top-menu > .menu_center {
+    width: 8%;
     height: 100%;
 
 }
-.top-menu>.menu_center>.logo>a{
+
+.top-menu > .menu_center > .logo > a {
     display: block;
     content: "";
-    width:90px;
+    width: 90px;
     height: 104px;
-    margin:0 auto;
+    margin: 0 auto;
     background: url(../img/logo.jpg);
     background-size: cover;
-    background-position: center;    
+    background-position: center;
 }
 
-.top-menu>.menu_right1{
-    width:31%;
+.top-menu > .menu_right1 {
+    width: 31%;
 
 }
 
-.top-menu>.menu_right1>ul>li{
-    width:23%;
+.top-menu > .menu_right1 > ul > li {
+    width: 23%;
     text-align: center;
-    margin:30px 0;
+    margin: 30px 0;
     position: relative;
 }
-.top-menu>.menu_right1>ul>li>a:hover{
+
+.top-menu > .menu_right1 > ul > li > a:hover {
     font-weight: bold;
 }
 
 
-.top-menu>.menu_right1>ul>.right::before{
+.top-menu > .menu_right1 > ul > .right::before {
     display: none;
 }
-.top-menu>.menu_right1>ul>li::before{
+
+.top-menu > .menu_right1 > ul > li::before {
     display: block;
     content: "";
-    width:1px;
+    width: 1px;
     height: 15px;
     background: white;
     position: absolute;
-    top:3px;
+    top: 3px;
 }
 
-.top-menu>.menu_right2{
-    width:15%;
+.top-menu>.menu_right2 {
+    text-align: center;
+    width: 15%;
+    color: white;
+    font-size: 20px;
 }
+
+.top-menu >.menu_right2 > ul{
+    margin-right: 70px;
+}
+.top-menu >.menu_right2 > ul > li {
+    width: ;
+    text-align: right;
+    margin: 20px 20px;
+}
+
+
 
 
 
 /* 메인 이미지 슬릭슬라이드 */
 
 
-.slick_wrap{
-    width: 100%;
-    position: relative;
-    z-index: -2;
-}
-
-.main_bg>h1{
+.main_bg > h1 {
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color:white;
-    font-size:48px;
+    color: white;
+    font-size: 48px;
     text-shadow: 7px 7px 7px black;
     opacity: 70%;
 }
-.slick_wrap{
-    width:100%;
+
+.slick_wrap {
+    width: 100%;
+    position: relative;
 }
-.slick_wrap div>img{
-    width:100%;
+
+.slick_wrap div > img {
+    width: 100%;
     height: 50vw;
     background-position: center;
     background-size: cover;
 }
 
+.slick-dots li{
+    width:50px;
+}
 
+.slick-dots li button:before {
+    font-size: 50px;
+    line-height: 20px;
+    position: absolute;
+    top: -40px;;
+    left: 0;
+    width: 55px;
+    height: 3px;
+    text-align: center;
+    opacity: .25;
+    background: white;
+    content:close-quote;
+}
 /*  contents */
-.contents{
+.contents {
     width: 1280px;
     margin: 0 auto;
 }
 
 /* 커피클럽 */
 
-.coffee-club{
+.coffee-club {
     margin-top: 50px;
     text-align: center;
 }
 
-.coffee-club>a{
+.coffee-club > a {
     color: red;
 }
-.coffee-club>a:hover{
+
+.coffee-club > a:hover {
     font-weight: bold;
 }
 
 /* 커피 베스트 */
-.coffee-shop{
+.coffee-shop {
     width: 100%;
     height: 372.87px;
 }
-.coffee-shop>h2{
+
+.coffee-shop > h2 {
     margin-top: 100px;
     text-align: center;
 }
-.coffee-shop>a{
+
+.coffee-shop > a {
     display: block;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -223,86 +267,120 @@ body{
     font-size: 15px;
     color: red;
 }
-.coffee-shop>.coffee-list{
+
+.coffee-shop > .coffee-list {
     width: 100%;
 }
 
 
-.coffee-shop>.coffee-list>.con1{
-    background: #ddd;
-}
-.coffee-shop>.coffee-list>.con1>a{
+.coffee-shop > .coffee-list > div > a {
     display: block;
-
     text-align: center;
     font-size: 13px;
     margin-top: 10px;
     font-weight: bold;
 }
 
-.coffee-shop>.coffee-list>div{
+.coffee-shop > .coffee-list > div {
     width: 32%;
     height: 300px;
     background-size: cover;
     background-position: center;
     margin-right: 2%;
 }
-.coffee-shop>.coffee-list>div:last-child{
+
+.coffee-shop > .coffee-list > div:last-child {
     margin-right: 0;
 }
 
-.coffee-shop>.coffee-list>div>img{
-    width:100%;
+.coffee-shop > .coffee-list > div > img {
+    width: 100%;
     height: 80%;
-    
+
 }
 
 /*커피 클래스*/
 
-.coffee-class{
+.coffee-class {
     width: 100%;
     position: relative;
     margin-top: 100px;
 }
 
-.coffee-class>img{
+.coffee-class > img {
     width: 100%;
     height: 700px;
     background-size: contain;
     background-position: center;
 }
 
-.coffee-class>.copping-text{
+.coffee-class > .copping-text {
     position: absolute;
     color: white;
     top: 65%;
-    left:50px;
+    left: 50px;
 }
 
-.goods{
+.goods {
     width: 100%;
     height: 1000px;
 }
-.goods>h2{
+
+.goods > h2 {
     text-align: center;
     margin: 50px 0;
 }
-.goods>.goods-img{
+
+.goods > .goods-img {
     width: 49%;
 }
-.goods>div>img{
+
+.goods > div > img {
     width: 100%;
     height: auto;
 }
 
-.goods>div:nth-of-type(odd){
+.goods > div:nth-of-type(odd) {
     margin-right: 2%;
 }
 
-.goods>div:nth-of-type(1){
+.goods > div:nth-of-type(1) {
     margin-bottom: 2%;
 }
 
-.goods>div:nth-of-type(2){
+.goods > div:nth-of-type(2) {
     margin-bottom: 2%;
 }
+
+
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    padding: 20px 50px;
+    background: #f8f8ed;
+    color: #233b5f;
+    line-height: 1.6em;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    border-top: 1px solid ;
+}
+
+.footer-wrap>ul>li{
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.footer-wrap>ul>li>span{
+    background: url(/img/round.png) no-repeat center center;
+    background-size: 28px 18px;
+    color: rgb(195,13,35);
+    font-weight: bold;
+    margin-bottom: 2px;
+    display: inline-block;
+    padding: 5px 8px;
+    line-height: 1em;
+}
+

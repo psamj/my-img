@@ -45,19 +45,20 @@ body {
 
 .top-menu {
     width: 100%;
-    height: 70px;
+    height: 12%;
     /*    background: rgba(0,0,0,50%);*/
     position: absolute;
     color: white;
-    margin-top: 20px;
     position: fixed;
     z-index: 5;
+    padding-top: 10px;
 }
 
 .top-menu > .menu_left1 {
     width: 15%;
     padding: 20px 50px;
     box-sizing: border-box;
+    height: 100%;
 }
 
 .top-menu > .menu_left1 > .fritz {
@@ -72,13 +73,12 @@ body {
 .top-menu > .menu_left2 {
     width: 31%;
     height: 100%;
-    background: ;
 }
 
 .top-menu > .menu_left2 > ul > li {
     width: 23%;
     text-align: center;
-    margin: 30px 0;
+    margin: 40px 0;
     position: relative;
 }
 
@@ -104,14 +104,13 @@ body {
     width: 100%;
     height: 100%;
     margin-top: 20px;
-    display: none;
 }
 
 .menu_left2 > ul > li > ul > li {
     width: 100%;
     height: 100%;
     margin-top: 5px;
-
+    display: none;
 }
 
 .menu_left2 > ul > li > ul > li > a:hover {
@@ -121,29 +120,29 @@ body {
 .top-menu > .menu_center {
     width: 8%;
     height: 100%;
-
 }
 
 .top-menu > .menu_center > .logo > a {
     display: block;
     content: "";
-    width: 90px;
-    height: 104px;
+    width: 83px;
+    height: 97px;
     margin: 0 auto;
     background: url(../img/logo.jpg);
     background-size: cover;
     background-position: center;
+    margin-top: 5px;
 }
 
 .top-menu > .menu_right1 {
     width: 31%;
-
+    height: 100%;
 }
 
 .top-menu > .menu_right1 > ul > li {
     width: 23%;
     text-align: center;
-    margin: 30px 0;
+    margin: 40px 0;
     position: relative;
 }
 
@@ -169,6 +168,7 @@ body {
 .top-menu>.menu_right2 {
     text-align: center;
     width: 15%;
+    height: 100%;
     color: white;
     font-size: 20px;
 }
@@ -177,10 +177,8 @@ body {
     margin-right: 70px;
 }
 .top-menu >.menu_right2 > ul > li {
-    width: ;
     text-align: right;
-    margin: 20px 20px;
-
+    margin: 40px 20px;
 }
 
 
@@ -190,20 +188,9 @@ body {
 /* 메인 이미지 슬릭슬라이드 */
 
 
-.main_bg > h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 48px;
-    text-shadow: 7px 7px 7px black;
-    opacity: 70%;
-}
 
 .slick_wrap {
     width: 100%;
-    position: relative;
 }
 
 .slick_wrap div > img {
@@ -220,13 +207,16 @@ body {
     position: relative;
 }
 
-.slick_wrap>.con1>h1{
+.slick_wrap>.con1 >.text-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-} 
+    color: red;
+    font-size: 199px;
+    text-shadow: 7px 7px 7px black;
+    z-index: 5;
+}
 
 .slick-dots li{
     width:50px;
@@ -353,13 +343,27 @@ body {
 .coffee-class > .copping-text {
     position: absolute;
     color: white;
-    top: 65%;
-    left: 50px;
+    top: 55%;
+    left: 5%;
 }
-.coffee-class > .copping-text>a{
+.coffee-class > .copping-text>p{
     font-size: 15px;
     font-weight: 100;
 }
+.coffee-class > .copping-text> a{
+    display: block;
+    width: 190px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid white;
+}
+.coffee-class > .copping-text> a:hover{
+    color: red;
+    border:1px solid red;
+    font-weight: bold;
+}
+
 
 /*  굿즈  */
 
@@ -367,6 +371,7 @@ body {
 .goods {
     width: 100%;
     height: 1000px;
+    margin-top: 150px;
 }
 
 .goods > h2 {

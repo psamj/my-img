@@ -52,8 +52,8 @@ body {
     z-index: 3;
 }
 
-.top-bar:hover{
-    background: rgba(0, 0, 0, 0.5);
+.top-bar:hover {
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .left-category {
@@ -70,7 +70,7 @@ body {
 
 .left-category > .left-simbol > span > span {
     display: block;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
 .left-category > .left-simbol > span > span:first-child {
@@ -93,51 +93,80 @@ body {
     display: flex;
 }
 
-.main-menu > ul > li {
+
+.main-menu ul > li:hover > a {
+    color: #b51f28;
+    text-decoration: underline
+}
+
+
+
+.main-menu > ul > li > a {
+    padding: 0 10px;
+    font-weight: bold;
     display: flex;
     height: 100%;
     align-items: center;
-}
-.main-menu ul > li:hover > a {
-  color:#b51f28;
-  text-decoration:underline
-}
-.main-menu > ul > li > a {
-    padding: 0 20px;
-    font-weight: bold;
+
 }
 
 .main-menu > ul > li > div > ul {
-  display:none;
-  position:absolute;
-  transform:translateY(-40px);
+    display: none;
+    position: absolute;
+    transform: translateY(-40px);
 }
 
 .main-menu > ul > li > div::before {
-  content:"";
-  display:block;
-  background-color:rgba(0,0,0,0.4);
-  position:absolute;
-  left:0;
-  width:100%;
-  display:none;
-}
-
-.top-bar .main-menu  > ul > li.li-sub-items-count-4 > div::before {
-  height:216px;
-}
-
-.top-bar .menu-box-1 > ul > li.li-sub-items-count-3 > div::before {
-  height:152px;
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: none;
 }
 
 
-.menu-right>ul{
+
+.main-menu > ul > .sub-items-count-2 > div::before {
+    height: 75px;
+}
+
+.main-menu > ul > .sub-items-count-3 > div::before {
+    height: 120px;
+}
+
+.main-menu > ul > .sub-items-count-4 > div::before {
+    height: 170px;
+}
+
+.top-bar .main-menu > ul > li:hover > div::before {
+    display: block;
+}
+
+.top-bar .main-menu > ul > li:hover > div > ul {
+    display: block;
+}
+
+
+.top-bar .main-menu > ul > li > div > ul > li > a {
+    display: block;
+    padding: 15px 0px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.top-bar .main-menu > ul > li > a {
+    padding: 0 10px;
+}
+
+.menu-right > ul {
     height: 100%;
     display: flex;
 }
 
-.menu-right>ul>li{
+.menu-right > ul > li {
     padding: 0 20px;
     font-weight: bold;
     align-items: center;
@@ -146,15 +175,9 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
+.top-bar .menu-right > ul > li:hover > a {
+    color: #b51f28;
+}
 
 
 
@@ -169,27 +192,29 @@ body {
 
 .slick_wrap div > img {
     width: 100%;
-    height: 50vw;
+    height: 100%;
     background-position: center;
     background-size: cover;
+    cursor: pointer;
 }
 
-.slick_wrap > div {
+.slick_wrap .con1 {
     width: 100%;
     height: 50vw;
     background: black;
     position: relative;
 }
 
-.slick_wrap > .con1 > .text-box {
+.slick_wrap .con1 > h1 {
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: red;
-    font-size: 199px;
+    color: white;
+    font-size: 50px;
     text-shadow: 7px 7px 7px black;
-    z-index: 5;
+
 }
 
 .slick-dots li {
@@ -297,7 +322,7 @@ body {
 .coffee-shop > .coffee-list > div > img {
     width: 100%;
     height: 80%;
-
+    cursor: pointer;
 }
 
 
@@ -379,6 +404,7 @@ body {
 .goods > div > img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .goods > div > div {
@@ -431,6 +457,7 @@ body {
 /* footer */
 
 .footer {
+    min-width: 1600px;
     width: 100%;
     padding: 20px 50px;
     background: #f8f8ed;

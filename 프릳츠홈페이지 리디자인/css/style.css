@@ -239,43 +239,49 @@ body {
 .slick_wrap .con3 > .text{
     position: absolute;
     top: 75%;
-    left: -35%;
-/*    text-shadow: 3px 2px 5px black;*/
-    opacity: 75%;
-    text-align: center;
+    left: 3%;
+    text-align: left;
 }
 
 
 .slick_wrap .con3 > .text > h1{
     color: #b51f28;
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #777;
 }
-
+.slick_wrap .con3 > .text > strong{
+    font-size: 27px;
+    color: #444;
+}
 .slick_wrap .con3 > .text > span{
     font-size: 20px;
     text-align: center;
     font-weight: bold;    
+    opacity: 75%;
 }
-
+.slick_wrap .con3 > .text > p{
+    font-size: 14px;
+}
 
 .slick_wrap .con4 > .text{
     position: absolute;
     top: 70%;
-    left: -30%;
+    left: 5%;
     color: white;
     text-shadow: 5px 5px 5px black;
     opacity: 75%;
-    text-align: center;
+    text-align: left;
 }
 
 
 .slick_wrap .con4 > .text > h1{
     color: #b51f28;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .slick_wrap .con4 > .text > span{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     font-weight: bold;
 }
@@ -319,7 +325,7 @@ body {
 
 
 .coffee-club {
-    margin-top: 50px;
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -433,9 +439,9 @@ body {
 }
 
 .coffee-class > .copping-text > a:hover {
-    color: red;
-    border: 1px solid red;
-    font-weight: bold;
+    color: #b51f28;
+    border: 1px solid #b51f28;
+
 }
 
 
@@ -545,7 +551,7 @@ body {
 }
 
 .footer-wrap > ul > li > span {
-    background: url(/img/round.png) no-repeat center center;
+    background: url(../img/round.png) no-repeat center center;
     background-size: 28px 18px;
     color: rgb(195, 13, 35);
     font-weight: bold;

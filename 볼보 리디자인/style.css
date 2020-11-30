@@ -18,6 +18,10 @@ a{
     clear: both;
 }
 
+.cell{
+    float: left;
+}
+
 /* top menu */
 
 .top-bar{
@@ -27,9 +31,7 @@ a{
     height: 80px;
     position: fixed;
     z-index: 3;
-    padding:0 15px;
     transition: 0.5s;
-    background: #ddd;
 }
 
 .top-bar:hover{
@@ -62,18 +64,17 @@ a{
 
 
 .top-bar>.left-menu>ul{
-    margin-left: 30px;
+    margin-left: 45px;
 }
 
 .top-bar>.right-menu>ul{
-    margin-right: 30px;
+    margin-right: 45px;
     justify-content:flex-end;
 }
 .top-bar>div>ul>li{
     display: flex;
     height: 80px;
     align-items:center;
-    cursor: pointer;
 }
 
 
@@ -81,19 +82,22 @@ a{
     padding: 0 20px;
     color:white;
     font-weight: bold;; 
-    display: block;
-    width: 100%;
+    display: block;    
     position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
 }
 .top-bar>div>ul>li>a::after{
     display: block;
     content: "";
     width:0%;
-    height: 3px;
+    height: 4px;
     text-align: center;
     background: #263ba0;
     position: absolute;
-    top: 44px;
+    bottom:  0px;
     left: 0px;
     transition: 0.3s;
 }
@@ -112,22 +116,76 @@ a{
 .nav-2dep{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 0vh;
     background: white;
-    z-index: 2;
-    padding: 130px 50px;
+    z-index: 2; 
     box-sizing: border-box;
+    overflow: hidden;
 }
+
 
 .nav-2dep>.inner-cars{
-    width: 100%;
+    width: 60%;
+    min-width: 1280px;
     height: 100%;
-    background: #ddd;
-
+    padding: 130px 50px 0 50px;
+}
+.nav-2dep>.inner-cars>div{
+    width: 80%;
+    height: 23%;
+    padding: 30px 0;
+    margin-left: 40px;
+    border-bottom: 1px solid #989898;
+}
+.nav-2dep>.inner-cars>div:last-child{
+    border-bottom: 0;
 }
 
-.nav-2dep>.inner-cars>.suv>span{
+.nav-2dep>.inner-cars>div>div{
+    width: 260px;
+}
+
+
+.nav-2dep>.inner-cars>div>span{
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color: #161618;
+    width: 160px;
+}
+
+.nav-2dep>.inner-cars>div>div>a{
     font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.nav-2dep>.inner-cars>div>div>a >img{
+    transition: 0.5s;
+}
+.nav-2dep>.inner-cars>div>div>a:hover >img{
+    transform: scale(1.1);
+}
+
+.nav-2dep>.inner-cars>div>div>div>a:first-child{
+    margin-right: 30px;
+}
+.nav-2dep>.inner-cars>div>div>div>a{
+    color:#777;
+    font-weight: lighter;
+    position: relative;
+}
+.nav-2dep>.inner-cars>div>div>div>a>i{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    color: #1c6bba;
+    transition: 0.7s;
+}
+.nav-2dep>.inner-cars>div>div>div>a:hover >i{
+    right: -6px;
 }
 
 
@@ -140,6 +198,7 @@ a{
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    
 }
 .main-video{
     width:100%;

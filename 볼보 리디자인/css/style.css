@@ -77,7 +77,6 @@ a{
     align-items:center;
 }
 
-
 .top-bar>div>ul>li>a{
     padding: 0 20px;
     color:white;
@@ -122,7 +121,9 @@ a{
     box-sizing: border-box;
     overflow: hidden;
 }
-
+.nav-2dep.active{
+    height: 100vh;
+}
 
 .nav-2dep>.inner-cars{
     width: 60%;

@@ -1,0 +1,720 @@
+/*노멀라이즈*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 라이브러리 */
+
+.row::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.cell {
+    float: left;
+}
+
+.cell2 {
+    float: right;
+}
+
+/* 스타일 */
+
+.header {
+    width: 100%;
+    background: #111;
+}
+
+.header-wrap {
+    width: 1240px;
+    margin: 0 auto;
+    color: #777;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.header-left {
+    padding: 5px 0;
+}
+
+.header-right > div {
+    margin-right: 15px;
+    padding: 5px 10px;
+}
+
+
+.header-right>.SEARCH{
+    position: relative;
+    
+}
+.header-right>.SEARCH>.inp-box{
+    width:0px;
+    height: 20px;
+    background: #888;
+    position: absolute;
+    top:4px;
+    right: 28px;    
+    border-radius: 3px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.header-right>.SEARCH>.inp-box.active{
+    width:256px;
+}
+
+.header-right>.SEARCH>.inp-box>input{
+    width:80%;
+    height: 100%;
+    padding:0px 10px;
+    background: #888;
+    border: 0;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.header-right>.SEARCH>.inp-box>.close-but{
+    padding-right: 10px;
+    font-size: 18px;
+    color:white;
+    opacity:50%;
+    font-weight: lighter;
+    position: absolute;
+    top: -3px;
+    right: 0;
+}
+
+
+
+.list-box{
+    width:286px;
+    position: absolute;
+    background: white;
+    border-radius: 5px;
+}
+
+.list-box>div{
+    width:33.3333%;
+    text-align: center;
+    padding: 20px 0 ;
+}
+
+
+
+
+
+
+
+
+
+.language-icon {
+    width: 15px;
+    height: 10px;
+    background: url(../img/iconkor.PNG);
+    background-size: cover;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.online {
+    background: red;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 0;
+}
+
+
+/* 라이카 메뉴 */
+
+.top-menu {
+    background: black;
+
+}
+
+.top-wrap {
+    width: 1240px;
+    margin: 0 auto;
+    color: white;
+    padding: 15px;
+
+}
+
+.top-wrap > .leica-logo {
+    width: 50px;
+    height: 50px;
+    background: url(../img/Leica%20logo.PNG);
+    background-size: cover;
+    margin-right: 40px;
+}
+
+.top-wrap > ul > li {
+    margin-right: 20px;
+    font-size: 14px;
+
+}
+
+.top-wrap > ul > li > a {
+    display: block;
+    padding: 15.5px 0;
+}
+
+.top-wrap > ul > li > ul {
+    display: none;
+}
+
+.top-wrap > ul > li:hover a {
+    color: red;
+}
+
+.shopping-bag {
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+}
+.inner-menu {
+    z-index: 1;
+    width: 100%;
+    height: 0px;
+    background: black;
+    position: absolute;
+    top: 117px;
+    padding-left: 420px;
+    line-height: 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.inner-menu.active{
+    height: 80px;
+}
+.inner-menu > ul {
+    margin: 0 auto;
+    height: 80px;
+    display: none;
+}
+
+.inner-menu > ul.active{
+    display: block;
+}
+.inner-menu > ul > li {
+    margin-right: 30px;
+}
+
+.inner-menu > ul > li > a {
+    display: block;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* Contents */
+
+
+.contents {
+    min-width: 1440px;
+    width: 100%;
+}
+
+
+/* Main IMG */
+
+
+.slider-wrap {
+    width: 100%;
+}
+
+.con {
+    position: relative;
+}
+
+.slider-wrap div > img {
+    width: 100%;
+
+}
+
+.slider-wrap div div > i {
+    color: red;
+}
+
+.slider-wrap div > .text {
+    position: absolute;
+    top: 60%;
+    left: 7%;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* MainIMG dots */
+.slider-wrap .slick-dots {
+    width: 100%;
+    max-width: 1280px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+    position: relative;
+    bottom: auto;
+}
+
+.slider-wrap .slick-dots li {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    margin: 20px 0;
+    padding: 0;
+    cursor: pointer;
+    top: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* banner img */
+.mid-img {
+    padding-left: 40px;
+    width: 90%;
+    padding-bottom: 33.4065%;
+    margin-bottom: 50px;
+    background: url(../img/main_banner_web.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px auto;
+}
+
+
+/* 사진전 */
+
+.photo-wrap {
+    width: 70%;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+.photo-wrap div div p > i {
+    color: red;
+}
+
+.img-left {
+    width: 48.5%;
+
+}
+
+.img-left > .img-box {
+    width: 100%;
+    background: url(../img/img_main_sub_01_exhibition_620x820_d.jpg);
+    background-size: cover;
+    padding-bottom: 132.2258%;
+    position: relative;
+}
+
+.photo-text {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+
+.photo-text > .top {
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+
+.photo-text > .bottom {
+    font-size: 25px;
+}
+
+
+.img-right {
+    width: 48.5%;
+    margin-left: 3%;
+    position: relative;
+}
+
+.img-right > .img-top {
+    width: 100%;
+    background: url(../img/img_main_banner03.jpg);
+    padding-bottom: 62.9032%;
+    background-size: cover;
+    margin-bottom: 6.5%;
+    position: relative;
+}
+
+.img-right > .img-bottom {
+    width: 100%;
+    background: url(../img/img_main_banner_O.jpg);
+    padding-bottom: 62.9032%;
+    background-size: cover;
+    position: relative;
+}
+
+.mid-slider-wrap {
+    width: 100%;
+    margin: 50px 0;
+}
+
+
+.mid-slider {}
+
+.slider-img {
+    position: relative;
+}
+
+.slick-list {
+    width: 100%;
+    position: relative;
+    margin-right: 20px;
+    padding: ;
+}
+
+
+.slider-img > .text {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-weight: bold;
+}
+
+.slider-img > .text > .bottom-txt {
+    margin-top: 15%;
+    font-size: 25px;
+}
+
+.slider-img > .text > .bottom-txt > i {
+    color: red;
+}
+
+
+/*  아카데미  */
+
+.akademie-wrap {
+    width: 1280px;
+    margin: 100px auto;
+}
+
+.about {
+    color: red;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+.academie{
+    margin-left: 30px;
+    font-size: 26px;
+}
+
+.cont{
+    margin:30px 0;
+}
+
+.cont > .left {
+    width: 60%;
+    margin-right: 3%;
+}
+
+.cont > .left > .left-img {
+    width: 100%;
+    height: 765px;
+    background: url(../img/list_10.jpg);
+    background-size: cover;
+}
+
+.cont > .right {
+    width: 37%;
+    height: 765px;
+}
+.class-list{
+    height: 100%;
+    width: 100%;
+    border-top: 4px solid #000;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+
+}
+
+.class-list::-webkit-scrollbar{
+    display:none; 
+}
+
+
+/*스크롤박스 날짜*/
+.class-list>.left{    
+    width: 10%;
+    border-right: 1px solid #777;
+    box-sizing: border-box;
+}
+.class-list>.left>div{
+    padding: 40px 0;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 210px;
+    position: relative;
+}
+.class-list>.left>.text>p::before{
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    right: -4px;
+    top:47px;
+}
+
+/*스크롤박스 오른쪽*/
+.class-list>.right{
+    width: 83%;
+    margin-left: 7%;
+}
+
+/*스크롤박스 오른쪽 박스 10개*/
+.class-list>.right>div{
+    width:100%;
+    height: 210px;
+    padding:40px 0;    
+    position: relative;
+}
+
+.class-list>.right>div::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    bottom: 0;
+}
+
+/*스크롤박스 오른쪽박스의 왼쪽 글자 */
+.class-list>.right>div>.left{
+    width:50%;
+    height: 100%;
+    position: relative;
+}
+.class-list>.right>div>.left>span{
+    bottom: 0px;
+    left: 0;
+    position: absolute;
+    font-size: 14px;
+}
+.class-list>.right>div>.left>p{
+    font-size: 20px;
+    font-weight: 550;    
+}
+.class-list>.right>div>.left>p>i{
+    color: red;
+}
+/*스크롤박스 오른쪽 작은사진*/
+.class-list>.right>div>.right{
+    width:50%;
+    
+}
+
+.box1>.right{
+    width: 100%;
+    height: 100%;
+    background: url(../img/list_6.jpg);
+    background-size: cover;
+}
+
+.box2>.right{
+    width: 100%;
+    height: 100%;
+    background: url(../img/img_ak_list_200202.jpg);
+    background-size: cover;    
+}
+
+
+.box3>.right{
+ width: 100%;
+    height: 100%;
+    background: url(../img/img_ak_list_200206.jpg);
+    background-size: cover;
+}
+
+
+.box4>.right{
+     width: 100%;
+    height: 100%;
+    background: url(../img/img_ak_list_200215.jpg);
+    background-size: cover;
+}
+
+
+.box5>.right{
+     width: 100%;
+    height: 100%;
+    background: url(../img/img_ak_list_200301.jpg);
+    background-size: cover;
+}
+
+
+.box6>.right{
+     width: 100%;
+    height: 100%;
+    background: url(../img/img_ak_list_200510.jpg);
+    background-size: cover;
+}
+
+
+.box7>.right{
+     width: 100%;
+    height: 100%;
+    background: url(../img/img_ak_list_200424.jpg);
+    background-size: cover;
+}
+
+
+.box8>.right{
+     width: 100%;
+    height: 100%;
+    background: url(../img/img_ak_list_200524.jpg);
+    background-size: cover;
+}
+
+
+.box9>.right{
+     width: 100%;
+    height: 100%;
+    background: url(../img/list_8.jpg);
+    background-size: cover;
+}
+
+
+.box10>.right{
+     width: 100%;
+    height: 100%;
+    background: url(../img/list.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+/*  LEICA EXHIBITION  box */
+
+.exhibition-box{
+    width: 1280px;    
+    margin: 0 auto;
+}
+.exhibition-box>h2{
+    margin: 30px 50px;
+    
+}
+
+.exhibition-img{
+    width: 100%;
+    padding-bottom: 47.36%;
+    background: url(../img/1900-900_1.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+
+.exhibition-img>.text {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+}
+
+.exhibition-img>.text > .top {
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+
+.exhibition-img>.text > .bottom {
+    font-size: 25px;
+}
+.exhibition-img>.text > .bottom>i{
+    color: red;
+}
+
+
+
+/* contents 마지막*/
+
+.bottom-red{
+    min-width: 1280px;
+    width: 100%;
+    padding:76px 0 ;
+    background: red;
+    margin-top: 100px;
+    color: white;
+}
+
+.bottom-red>.text-box{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.bottom-red>.text-box>p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer-wrap{
+    width: 100%;
+    min-width: 1280px;
+    padding: 50px 0 ;
+    background:black;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

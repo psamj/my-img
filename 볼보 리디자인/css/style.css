@@ -31,8 +31,13 @@ a{
     height: 80px;
     position: fixed;
     z-index: 3;
-    transition: 0.5s;
+    transition: 0.3s;
+    border-bottom:0px solid #dbdcdc;
 }
+.top-bar.active{
+    border-bottom: 1px solid #dbdcdc;
+}
+
 
 .top-bar:hover{
     background: white;
@@ -75,11 +80,16 @@ a{
     display: flex;
     height: 80px;
     align-items:center;
+    color:white;
 }
+.top-bar>div>ul>li.active{
+    color: black;    
+}
+
 
 .top-bar>div>ul>li>a{
     padding: 0 20px;
-    color:white;
+
     font-weight: bold;; 
     display: block;    
     position: relative;
@@ -88,6 +98,7 @@ a{
     display: flex;
     align-items:center;
 }
+
 .top-bar>div>ul>li>a::after{
     display: block;
     content: "";
@@ -104,6 +115,8 @@ a{
 .top-bar>div>ul>li:hover >a::after{
     width: 100%;
 }
+
+
 .top-bar:hover >div>ul>li>a{
     color: black;
 }
@@ -111,30 +124,36 @@ a{
 
 /* inner menu */
 
-
-.nav-2dep{
+/* cars */
+.nav-dep-wrap>div{
     position: absolute;
-    width: 100%;
-    height: 0vh;
     background: white;
     z-index: 2; 
-    box-sizing: border-box;
+    transition: 0.5s;
+    margin-top: 80px;
+}
+.nav-2dep{    
+    width: 100%;
+    height: 0vh; 
     overflow: hidden;
 }
 .nav-2dep.active{
     height: 100vh;
 }
 
+
+
 .nav-2dep>.inner-cars{
     width: 60%;
     min-width: 1280px;
     height: 100%;
-    padding: 130px 50px 0 50px;
+    padding: 50px 50px 0 50px;
 }
+
 .nav-2dep>.inner-cars>div{
     width: 80%;
-    height: 23%;
-    padding: 30px 0;
+    height: 210px;
+    padding-top: 30px ;
     margin-left: 40px;
     border-bottom: 1px solid #989898;
 }
@@ -189,6 +208,40 @@ a{
     right: -6px;
 }
 
+/* buy */
+
+.nav-3dep{
+    top: 0px;
+    left: 118px;
+    width: 300px;
+    height: 300px;    
+    padding: 40px 60px;
+}
+
+/* .nav-3dep.active{
+     
+} */
+
+
+.nav-3dep>div{
+    width: 50%;
+    height: 100%;    
+    box-sizing: border-box;
+}
+
+.nav-3dep>div>p{
+    display: block;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #989898;
+    border-bottom: 1px solid #dbdcdc;
+}
+
+.nav-3dep>div>a{
+    display: block;
+    padding: 20px 0;
+}
 
 
 

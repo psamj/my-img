@@ -36,6 +36,7 @@ a{
 }
 .top-bar.active{
     border-bottom: 1px solid #dbdcdc;
+    background: white;
 }
 
 
@@ -80,16 +81,16 @@ a{
     display: flex;
     height: 80px;
     align-items:center;
-    color:white;
+
 }
-.top-bar>div>ul>li.active{
+.top-bar>div>ul>li>a.active{
     color: black;    
 }
 
 
 .top-bar>div>ul>li>a{
     padding: 0 20px;
-
+    color:white;
     font-weight: bold;; 
     display: block;    
     position: relative;
@@ -125,20 +126,23 @@ a{
 /* inner menu */
 
 /* cars */
+
 .nav-dep-wrap>div{
     position: absolute;
     background: white;
     z-index: 2; 
-    transition: 0.5s;
+    transition: 0.5s;   
     margin-top: 80px;
+    
 }
+
 .nav-2dep{    
     width: 100%;
     height: 0vh; 
     overflow: hidden;
 }
 .nav-2dep.active{
-    height: 100vh;
+    height: 91.5vh;
 }
 
 
@@ -211,38 +215,159 @@ a{
 /* buy */
 
 .nav-3dep{
-    top: 0px;
+    top:0px;
     left: 118px;
-    width: 300px;
-    height: 300px;    
-    padding: 40px 60px;
+    width: 400px;
+    height: 0px;    
+    transition: 0.3s;
+    overflow: hidden;
 }
 
-/* .nav-3dep.active{
-     
-} */
-
-
+.nav-3dep.active{
+    height: 320px; 
+}
 .nav-3dep>div{
-    width: 50%;
-    height: 100%;    
+    width: 100%;
+    height: 360px; 
+    padding: 40px 60px;
     box-sizing: border-box;
 }
 
-.nav-3dep>div>p{
+.nav-3dep>div>div{
+    width: 50%;
+    height: 360px; 
+    box-sizing: border-box;
+}
+.nav-3dep>div>.inner-right>p{
+    padding-left: 30px;
+}
+
+.nav-3dep>div>div>p{
     display: block;
     padding-bottom: 20px;
     font-size: 20px;
     font-weight: lighter;
     color: #989898;
     border-bottom: 1px solid #dbdcdc;
+    
 }
 
-.nav-3dep>div>a{
+.nav-3dep>div>div>a{
     display: block;
-    padding: 20px 0;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.nav-3dep>div>.inner-right>a{
+    padding-left: 30px;
 }
 
+/* service menu */
+
+.nav-4dep{
+    top:0px;
+    left: 118px;
+    width: 600px;
+    height: 0px;    
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.nav-4dep.active{
+    height: 380px; 
+}
+.nav-4dep>div{
+    width: 100%;
+    height: 360px; 
+    padding: 40px 60px;
+    box-sizing: border-box;
+}
+
+.nav-4dep>div>div{
+    width: 50%;
+    height: 360px; 
+    box-sizing: border-box;
+}
+.nav-4dep>div>.inner-right>p{
+    padding-left: 30px;
+}
+
+.nav-4dep>div>div>p{
+    display: block;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #989898;
+    border-bottom: 1px solid #dbdcdc;
+    
+}
+
+.nav-4dep>div>div>a{
+    display: block;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.nav-4dep>div>.inner-right>a{
+    padding-left: 30px;
+}
+
+/* why volvo */
+
+.nav-5dep{
+    top:0px;
+    left: 118px;
+    width: 710px;
+    height: 0px;    
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.nav-5dep.active{
+    height: 380px; 
+}
+.nav-5dep>div{
+    width: 100%;
+    height: 360px; 
+    padding: 40px 60px;
+    box-sizing: border-box;
+}
+
+.nav-5dep>div>div{
+    width: 33.3333%;
+    height: 360px; 
+    box-sizing: border-box;
+}
+.nav-5dep>div>.inner-right>p{
+    padding-left: 50px;
+}
+.nav-5dep>div>.inner-mid>p{
+    padding-left: 30px;
+}
+
+.nav-5dep>div>div>p{
+    display: block;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #989898;
+    border-bottom: 1px solid #dbdcdc;
+    
+}
+
+.nav-5dep>div>div>a{
+    display: block;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.nav-5dep>div>.inner-right>a{
+    padding-left: 50px;
+}
+
+.nav-5dep>div>.inner-mid>a{
+    padding-left: 30px;
+}
 
 
 /* main video */

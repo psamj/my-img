@@ -21,7 +21,9 @@ a{
 .cell{
     float: left;
 }
-
+.cell2{
+    float: right;
+}
 /* top menu */
 
 .top-bar{
@@ -126,14 +128,18 @@ a{
 /* inner menu */
 
 /* cars */
+.nav-dep-wrap{
+    position: fixed;
+    width:100%;
+    z-index: 2; 
 
+}
 .nav-dep-wrap>div{
     position: absolute;
     background: white;
-    z-index: 2; 
     transition: 0.5s;   
     margin-top: 80px;
-    
+
 }
 
 .nav-2dep{    
@@ -142,7 +148,7 @@ a{
     overflow: hidden;
 }
 .nav-2dep.active{
-    height: 91.5vh;
+    height: 100vh;
 }
 
 
@@ -215,7 +221,8 @@ a{
 /* buy */
 
 .nav-3dep{
-    top:0px;
+    
+    top:0;
     left: 118px;
     width: 400px;
     height: 0px;    
@@ -248,8 +255,7 @@ a{
     font-size: 20px;
     font-weight: lighter;
     color: #989898;
-    border-bottom: 1px solid #dbdcdc;
-    
+    border-bottom: 1px solid #dbdcdc;    
 }
 
 .nav-3dep>div>div>a{
@@ -383,3 +389,99 @@ a{
     width:100%;
 }
 
+
+/*  content  */
+
+.content-wrap{
+    min-width: 1280px;
+}
+.content1{
+    width: 100%;
+    padding-bottom: 31.5%;  
+    min-width: 1480px;
+    margin-top:20px;
+}
+
+.content1>div{
+    width: 49.5%;
+    padding-bottom: 31.5%;  
+    margin: 0 auto;
+    background: #777;
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+.content1>.img1{
+    background: url(../볼보고화질사진/xc60.jpg)no-repeat;
+    background-size: cover;
+    margin-right: 0.5%;
+
+}
+
+.content1>div:hover .text{
+    opacity: 1;
+}
+.content1>div>.text{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    opacity: 0;
+    transition: 0.5s;
+}
+.content1>.img1>.text{
+    top: 55%;
+    left: 5%; 
+}
+.content1>.img2>.text{
+    top: 55%;
+    left: 5%; 
+}
+
+.content1>div>.text>h1{
+    margin: 15px 0;
+}
+
+.content1>div>.text>a{
+    width: 170px;
+    font-size: 16px;
+    display: block;
+    border: 1px solid white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.content1>div>.text>a:hover{
+    background: white;
+    color: black;
+}
+
+
+.content1>.img2{
+    background: url(../볼보고화질사진/xc40white2.jpg)no-repeat top;
+    background-size: cover;
+}
+
+.content1>div>img{
+    width: 100%;
+    height: 600px;
+}
+
+
+.content2{
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+    background: pink;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    
+}
+
+.content2>div{
+    width: 25%;
+    height: 100%;
+    background: #ddd;
+}

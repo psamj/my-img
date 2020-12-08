@@ -23,4 +23,15 @@ $(document).ready(function(){
 
     })
 
+    $(".content3>.car-menu>div>a").click(function(){
+
+        if($this=="width:33.3%"){
+            
+        }
+        $(".content3>.car-menu>div>p").addClass("active");
+
+
+    })
+
+
 })

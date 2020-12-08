@@ -465,10 +465,15 @@ a {
 .content1>.img2>.text {
     top: 55%;
     left: 5%;
+    
 }
-
+.content1>div>.text>p{
+    text-shadow: 5px 5px 5px #000;
+    font-weight: 300;
+}
 .content1>div>.text>h1 {
     margin: 15px 0;
+    text-shadow: 5px 5px 5px #000;
 }
 
 .content1>div>.text>a {
@@ -480,12 +485,27 @@ a {
     text-align: center;
     margin-top: 30px;
     transition: 0.5s;
+    position: relative;
 }
 
 .content1>div>.text>a:hover {
     background: white;
     color: black;
 }
+
+.content1>div>div>a>i {
+    position: absolute;
+    top: 38%;
+    right:23%;
+    color: white;
+    transition: 0.7s;
+}
+
+.content1>div>div>a:hover>i {
+    right: 19%;
+    color: #1c6bba;
+}
+
 
 
 .content1>.img2 {
@@ -546,6 +566,7 @@ a {
     font-size: 14px;
     height: 41px;
     color: #1c6bba;
+    
 }
 
 
@@ -569,7 +590,7 @@ a {
 }
 
 
-/* content3   car-menu */
+/* content3   car-menu */   
 
 
 .content3>.car-menu {
@@ -586,7 +607,7 @@ a {
     margin: auto;
     position: relative;
 }
-.content3>.car-menu>div>p{
+.content3>.car-menu>div>span{
     position: absolute;
     display: block;
     width: 33.3%;
@@ -607,14 +628,6 @@ a {
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
 }
-.content3>.car-menu>div>.suv{
-    
-}
-.content3>.car-menu>div>.cross{
-    
-}
-
-
 
 .content3>.car-img {
     width: 100%;
@@ -632,23 +645,32 @@ a {
 }
 .car-img>.inner-cars>div{
     width: 100%;
-    height: 210px;
+    height: 230px;
     position: absolute;
+    transition: 0.5s;
 }
-.car-img>.inner-cars>.svu {
-    background: #1c6bba;
+.car-img>.inner-cars>.suv{
+    opacity: 1;
+}
+.car-img>.inner-cars>.suv.active {    
+    opacity: 0;
 }
 
-.car-img>.inner-cars>.sedan {
-    width: 100%;
-    height: 210px;
-    display: none;
+.car-img>.inner-cars>.sedan{
+    opacity: 0;
+}
+
+.car-img>.inner-cars>.sedan.active{
+    opacity: 1;
 }
 
 .car-img>.inner-cars>.country {
-    display: none;
+    opacity: 0;
 }
 
+.car-img>.inner-cars>.country.active{
+    opacity: 1;
+}
 
 .car-img>.inner-cars>div:last-child {
     border-bottom: 0;
@@ -666,7 +688,6 @@ a {
     margin-bottom: 10px;
     display: block;
     font-family: 'Open Sans Condensed', sans-serif;
-
 }
 
 .car-img>.inner-cars>div>div>a>img {

@@ -21,6 +21,11 @@ $(document).ready(function(){
           }
 
     })
+// 스크롤시 이미지 나타남
+
+
+
+//  volvo model 메뉴 하단 바 이동
 
     function Box1__init() {
         var $itemBottomLine = $('.content3>.car-menu>div>span');
@@ -37,6 +42,9 @@ $(document).ready(function(){
       }
       
       Box1__init();
+
+
+//  volvo model 이미지 변경
 
       $(".car-menu >div > a").click(function(){
         var $this=$(this);
@@ -55,9 +63,82 @@ $(document).ready(function(){
             $(".car-img>.inner-cars>.suv").css({"opacity": "1"})
              $(".car-img>.inner-cars>div").eq(index).addClass("active");
           }
-
+        
       })
-    
+
+
+      // 스크롤 시 탑바 메뉴 배경 흰색 
+      
+      $(window).scroll(function () {
+        $(this).scrollTop();
+        console.log($(this).scrollTop());
+        
+        if($(this).scrollTop()>700){
+          $(".top-bar").css({background:"rgba(255,255,255,255)"})
+          $(".top-bar>div>ul>li>a").css({color:"black"})
+        }else if($(this).scrollTop()<700){
+          $(".top-bar").css({background:"none"})
+          $(".top-bar>div>ul>li>a").css({color:"white"})
+        }
+        
+    })
+
+      // 스크롤 시 탑바 없어짐 
+
+      console.clear();
+      var $window = $(window);
+      
+      var windowScrollTop = 0;
+      var windowHeight = 0;
+      
+      $window.scroll(function() {
+          windowScrollTop = $window.scrollTop();
+      }).scroll();
+      
+      $window.resize(function() {
+          windowHeight = $window.height();
+      }).resize();
+      
+      function TopBar__show() {
+          $('html').addClass('top-bar-actived');
+      }
+      
+      function TopBar__init() {
+          $(window).on('wheel', function(event) {
+              var scrollTop = $window.scrollTop();
+      
+              if ( event.originalEvent.deltaY < 0 ) {
+                  TopBar__show();
+              }
+              else {
+                  TopBar__hide();
+              }
+          });
+      
+          function TopBar__hide() {
+              $('html').removeClass('top-bar-actived');
+          }
+      
+          TopBar__show();
+      
+          $(window).on('keyup', function(event) {
+              if ( event.keyCode == 38 || event.keyCode == 36 || event.keyCode == 33 ) {
+                  TopBar__show();
+              }
+              else if ( event.keyCode == 40 || event.keyCode == 35 || event.keyCode == 34 ) {
+                  TopBar__hide();
+              }
+          });
+      
+          $window.scroll(function() {
+              console.log(windowHeight);
+              if ( windowScrollTop == 0 ) {
+                  TopBar__show();
+              }
+          });
+      }
+      
+      TopBar__init();
 
 
 })
